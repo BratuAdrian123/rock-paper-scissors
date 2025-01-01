@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/rock-paper-scissors.png"
+    />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <h1 class="text-center mt-5 text-4xl">Rock Papper Scissors</h1>
+    <div class="text-center mt-10 flex-row justify-around">
+      <div>
+        <button class="player-button rock-button p-5 mr-5 text-xl">
+          Rock
+          <img src="images/rocks.png" width="50px" alt="Rock" />
+        </button>
+        <button class="player-button papper-button p-5 mr-5 text-xl">
+          Paper
+          <img src="images/pappers.png" width="50px" alt="Papper" />
+        </button>
+        <button class="player-button scissors-button p-5 mr-5 text-xl">
+          Scissors
+          <img src="images/scissors (1).png" width="50px" alt="Scissors" />
+        </button>
+      </div>
+      <div class="moves m-5 text-xl"></div>
+      <div class="flex text-2xl score-div">
+        <p class="score-win">Wins: 0</p>
+        <p class="score-lose ml-5">Loses: 0</p>
+        <p class="score-tie ml-5">Ties: 0</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
